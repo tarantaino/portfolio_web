@@ -49,39 +49,51 @@
 
         <article>
             <h3>Honeytrap</h3>
-            <p>Progetto full-stack personale sviluppato a scopo didattico. Viene implementato un Honeypot, un finto
-                server SSH vulnerabile, con la libreria paramiko in python. Quando un utente malevolo o un bot cercano
-                di accedeee al server tramite Attacco a Forza Bruta, l'honeypot blocca l'intrusione, ma registra IP,
-                username e passowrd usati nel tentativo.</p>
-            <p>SProgetto sviluppato con il supporto di assistenti AI.</p>
-            <p>Tecnologie: Python, Paramiko, Flask, SQLite, Docker</p>
+            <p>Un honeypot SSH in Python (Paramiko): un finto server che rifiuta ogni accesso e registra IP, username e
+                password dei tentativi di forza bruta. Gli eventi vengono salvati in SQLite e mostrati in tempo reale in
+                una dashboard web in Flask. Honeypot e dashboard sono due servizi separati, eseguiti in container
+                Docker.</p>
+            <p>Misure di sicurezza incluse: query parametrizzate contro la SQL injection, protezione dallo XSS
+                memorizzato nella dashboard, container con utente non root e dashboard raggiungibile solo da localhost.
+            </p>
+            <p>Tecnologie: Python, Paramiko, Flask, SQLite, JavaScript, Docker.</p>
             <p><a href="https://github.com/tarantaino/honeytrap">Codice su GitHub</a></p>
         </article>
 
         <article>
             <h3>Network Analyzer</h3>
-            <p>Progetto personale sviluppato a scopo didattico per l'applicazione di concetti di network security.</p>
-            <p>Cattura pacchetti TCP tramite PyShark. Progetto sviluppato con il supporto di assistenti AI.</p>
-            <p>Tecnologie: Python, PyShark, Excel</p>
+            <p>Cattura in tempo reale i pacchetti TCP con PyShark ed esporta un’analisi di base in CSV. È in sviluppo: i
+                prossimi passi sono l’ispezione degli handshake TLS e le impronte JA3/JA4.</p>
+            <p>Tecnologie: Python, PyShark (TShark), CSV.</p>
             <p><a href="https://github.com/tarantaino/network-analyzer">Codice su GitHub</a></p>
         </article>
 
         <article>
             <h3>Chat Client-Server</h3>
-            <p>Piccola app client-server sviluppata durante il Master in Cybersecurity</p>
-            <p>Threading su socket TCP e UDP</p>
-            <p>Tecnologie: Python, socket, TCP/UDP</p>
+            <p>Chat in Python su socket TCP e UDP, sviluppata nel corso di Networking del Master. Il server gestisce la
+                registrazione degli utenti (username, IP e porta), l’elenco dei connessi e le chat dirette tra utenti,
+                con codice modulare a classi. Prossimi passi: cifratura end-to-end e un’interfaccia semplice.</p>
+            <p>Tecnologie: Python, socket, TCP/UDP.</p>
             <p><a href="https://github.com/tarantaino/Client-Server-Chat-Project">Codice su GitHub</a></p>
         </article>
 
         <article>
             <h3>Complex Network Analysis Project</h3>
-            <p>Progetto di analisi di un dataset sulle citazioni della fisica delle alte energie. Sviluppato durante il
-                Master in Cybersecurity.</p>
-            <p>Sono state analizzate assortatività, CCDF, community detection, resilienza strutturale.</p>
-            <p>Tecnologie: Python, Jupyter, NumPy, matplotlib, igraph</p>
+            <p>Analisi di un dataset di citazioni HEP-PH (fisica delle alte energie): distribuzione dei gradi (CCDF),
+                assortatività, community detection e resilienza strutturale. Sviluppata nel corso di Networking del
+                Master in Cybersecurity (2024/25).</p>
+            <p>Tecnologie: Python, Jupyter, NumPy, matplotlib, igraph.</p>
             <p><a href="https://github.com/tarantaino/Complex-Network-Analysis-Project">Codice su GitHub</a></p>
         </article>
+
+        <article>
+            <h3>Esercizi vari in Python</h3>
+            <p>Serie di esercizi svolti durante l'Academy in AI-BI e PowerBI.</p>
+            <p>Tecnologie: Python</p>
+            <p><a href="https://github.com/tarantaino/Esercizi-Python-Academy-AI-BI-PowerBI">Codice su GitHub</a></p>
+        </article>
+
+
     </section>
 
     <section id="competenze">
