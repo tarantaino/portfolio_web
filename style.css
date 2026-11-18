@@ -1,0 +1,144 @@
+<link rel="stylesheet" href="style.css">
+
+/* 1. Colori in un posto solo: per cambiare palette basta toccare qui */
+:root {
+    --sfondo: #f4f6f8;
+    --testo: #17222d;
+    --attenuato: #566472;
+    --linea: #cbd5dd;
+    --accento: #1b5cc2;
+}
+
+/* 2. Tema scuro automatico, se il sistema del visitatore lo usa */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --sfondo: #0f1923;
+        --testo: #e4ebf1;
+        --attenuato: #98a7b5;
+        --linea: #2c3b49;
+        --accento: #7db0ff;
+    }
+}
+
+/* 3. Base della pagina */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+body {
+    margin: 0;
+    background: var(--sfondo);
+    color: var(--testo);
+    font: 1.0625rem/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+/* 4. Colonna centrale: righe di circa 65 caratteri, leggibili */
+header,
+main {
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+
+/* 5. Intestazione con nome e menu */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.5rem 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+header p {
+    margin: 0;
+    font-weight: 600;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.25rem;
+}
+
+nav a {
+    color: var(--testo);
+}
+
+/* 6. Titoli: serif per distinguerli dal testo */
+h1,
+h2,
+h3 {
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin: 2rem 0 1rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin: 0 0 1rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+/* 7. Sezioni e progetti separati da una linea sottile */
+section {
+    padding: 2.5rem 0;
+    border-top: 1px solid var(--linea);
+}
+
+#presentazione {
+    border-top: 0;
+}
+
+article {
+    padding: 1.25rem 0;
+    border-top: 1px solid var(--linea);
+}
+
+article:first-of-type {
+    border-top: 0;
+}
+
+/* 8. Link ed elenchi */
+a {
+    color: var(--accento);
+    text-underline-offset: 0.2em;
+}
+
+a:focus-visible {
+    outline: 2px solid var(--accento);
+    outline-offset: 3px;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.25rem;
+}
+
+ul {
+    padding-left: 1.2rem;
+}
+
+li {
+    margin-bottom: 0.4rem;
+}
