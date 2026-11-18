@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="style.css">
 
-/* 1. Colori in un posto solo: per cambiare palette basta toccare qui */
+/*Colori */
 :root {
     --sfondo: #f4f6f8;
     --testo: #17222d;
@@ -9,7 +9,7 @@
     --accento: #1b5cc2;
 }
 
-/* 2. Tema scuro automatico, se il sistema del visitatore lo usa */
+/*Tema scuro automatico*/
 @media (prefers-color-scheme: dark) {
     :root {
         --sfondo: #0f1923;
@@ -20,7 +20,7 @@
     }
 }
 
-/* 3. Base della pagina */
+/* Base della pagina */
 * {
     box-sizing: border-box;
 }
@@ -42,7 +42,7 @@ body {
     font: 1.0625rem/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
 
-/* 4. Colonna centrale: righe di circa 65 caratteri, leggibili */
+/* Colonna centrale: righe di circa 65 caratteri, leggibili */
 header,
 main {
     max-width: 42rem;
@@ -50,7 +50,7 @@ main {
     padding: 0 1.25rem;
 }
 
-/* 5. Intestazione con nome e menu */
+/* Intestazione con nome e menu */
 header {
     display: flex;
     flex-wrap: wrap;
@@ -76,7 +76,7 @@ nav a {
     color: var(--testo);
 }
 
-/* 6. Titoli: serif per distinguerli dal testo */
+/* Titoli: serif per distinguerli dal testo */
 h1,
 h2,
 h3 {
@@ -99,7 +99,7 @@ h3 {
     margin: 0;
 }
 
-/* 7. Sezioni e progetti separati da una linea sottile */
+/* Sezioni e progetti separati da una linea sottile */
 section {
     padding: 2.5rem 0;
     border-top: 1px solid var(--linea);
@@ -118,7 +118,7 @@ article:first-of-type {
     border-top: 0;
 }
 
-/* 8. Link ed elenchi */
+/*Link ed elenchi */
 a {
     color: var(--accento);
     text-underline-offset: 0.2em;
