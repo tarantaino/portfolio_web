@@ -1,4 +1,4 @@
-/*Colori */
+/* Colori */
 :root {
     --sfondo: #f4f6f8;
     --testo: #17222d;
@@ -7,7 +7,7 @@
     --accento: #1b5cc2;
 }
 
-/*Tema scuro automatico*/
+/* Tema scuro automatico */
 @media (prefers-color-scheme: dark) {
     :root {
         --sfondo: #0f1923;
@@ -52,6 +52,7 @@ main {
     padding-bottom: 3rem;
 }
 
+/* Barra laterale: nome, menu e contatti */
 .profilo {
     padding: 1.5rem 0;
 }
@@ -112,5 +113,80 @@ nav a:hover {
     nav,
     .contatti {
         flex-direction: column;
+    }
+}
+
+/* Titoli: serif per distinguerli dal testo */
+h1,
+h2,
+h3 {
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin: 0 0 1rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin: 0 0 1rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+/* Sezioni e progetti separati da una linea sottile */
+section {
+    padding: 2.5rem 0;
+    border-top: 1px solid var(--linea);
+}
+
+#presentazione {
+    border-top: 0;
+    padding-top: 1rem;
+}
+
+article {
+    padding: 1.25rem 0;
+    border-top: 1px solid var(--linea);
+}
+
+article:first-of-type {
+    border-top: 0;
+}
+
+/* Link ed elenchi */
+a {
+    color: var(--accento);
+    text-underline-offset: 0.2em;
+}
+
+a:focus-visible {
+    outline: 2px solid var(--accento);
+    outline-offset: 3px;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.25rem;
+}
+
+ul {
+    padding-left: 1.2rem;
+}
+
+li {
+    margin-bottom: 0.4rem;
+}
+
+/* Schermi larghi: la presentazione parte alla stessa altezza del nome nella barra */
+@media (min-width: 60rem) {
+    #presentazione {
+        padding-top: 3rem;
     }
 }
