@@ -1,19 +1,21 @@
 /* Colors: change the palette here */
 :root {
-    --bg: #f4f6f8;
-    --text: #17222d;
-    --muted: #566472;
-    --line: #cbd5dd;
-    --accent: #1b5cc2;
+    --bg: #F4EFE8;
+    --surface: #EAE2D6;
+    --text: #2B2724;
+    --muted: #645B53;
+    --line: #D6CBBB;
+    --accent: #A94A08;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg: #0f1923;
-        --text: #e4ebf1;
-        --muted: #98a7b5;
-        --line: #2c3b49;
-        --accent: #7db0ff;
+        --bg: #1F1C19;
+        --surface: #2A2622;
+        --text: #EFE8DE;
+        --muted: #B3A89A;
+        --line: #413B34;
+        --accent: #F29A52;
     }
 }
 
@@ -200,6 +202,7 @@ h3 {
     padding: 1.25rem 1.5rem;
     border: 1px solid var(--line);
     border-radius: 10px;
+    background: var(--surface);
 }
 
 .card p {
