@@ -1,10 +1,10 @@
 /* Colors: change the palette here */
 :root {
-    --bg: #F4EFE8;
-    --surface: #EAE2D6;
+    --bg: #FBF8F3;
+    --surface: #F3ECE1;
     --text: #2B2724;
     --muted: #645B53;
-    --line: #D6CBBB;
+    --line: #E1D6C6;
     --accent: #A94A08;
 }
 
