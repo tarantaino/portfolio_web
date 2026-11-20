@@ -1,149 +1,194 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Alessandro Tarantino</title>
+    <title>Alessandro Tarantino | Junior IT: Python, data analysis and cybersecurity</title>
     <meta name="description"
-        content="Alessandro Tarantino: junior IT con Master in Cybersecurity. Python, analisi dei dati, honeypot e analisi del traffico di rete.">
+        content="Alessandro Tarantino: junior IT professional with a Master's in Cybersecurity. Python, data analysis, honeypots and network traffic analysis.">
     <link rel="stylesheet" href="style.css">
 </head>
 
+<!-- Icons: Lucide (ISC license), https://lucide.dev -->
+
 <body>
-    <div class="pagina">
+    <a class="skip" href="#main">Skip to content</a>
 
-        <header class="profilo">
-            <p class="nome">Alessandro Tarantino</p>
-            <p class="ruolo">Junior IT, Pisa</p>
+    <header class="topbar">
+        <nav aria-label="Sections">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+        </nav>
+    </header>
 
-            <nav aria-label="Sezioni">
-                <a href="#presentazione">Presentazione</a>
-                <a href="#progetti">Progetti</a>
-                <a href="#competenze">Competenze</a>
-                <a href="#formazione">Formazione</a>
-            </nav>
+    <main id="main">
+        <section class="hero" id="top">
+            <!-- TODO: put your photo in img/alessandro.jpg (square crop, about 400x400 px, under 100 KB) -->
+            <img class="foto" src="img/propic.jpg" alt="Alessandro Tarantino" width="200" height="200">
+            <h1 class="name">Alessandro<br>Tarantino</h1>
+            <p class="title">Junior IT: Python, data analysis and cybersecurity</p>
+            <p class="summary">Junior IT professional with a Master's degree in Cybersecurity from the University of
+                Pisa, working on network traffic analysis, honeypots and container security.</p>
 
-            <div class="contatti">
-                <a href="mailto:tarantino.alessandro14@gmail.com">E-Mail</a>
-                <a href="https://github.com/tarantaino">GitHub</a>
-                <a href="https://www.linkedin.com/in/alet26">LinkedIn</a>
-                <a href="cv/CV.pdf">Scarica il CV</a>
-            </div>
-        </header>
+            <p class="social">
+                <a href="https://www.linkedin.com/in/alet26">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                        <rect width="4" height="12" x="2" y="9" />
+                        <circle cx="4" cy="4" r="2" />
+                    </svg>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/tarantaino">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                        <path d="M9 18c-4.51 2-5-2-7-2" />
+                    </svg>
+                    <span>GitHub</span>
+                </a>
+                <a href="mailto:tarantino.alessandro14@gmail.com">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <rect width="20" height="16" x="2" y="4" rx="2" />
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                    </svg>
+                    <span>tarantino.alessandro14@gmail.com</span>
+                </a>
+                <a href="cv/CV.pdf">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 15V3" />
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <path d="m7 10 5 5 5-5" />
+                    </svg>
+                    <span>Download CV</span>
+                </a>
+            </p>
 
-        <main>
-            <section id="presentazione">
-                <h1>Junior IT: Python, analisi dei dati e cybersecurity.</h1>
-                <p>Ho un diploma tecnico in Informatica e Telecomunicazioni e un Master di primo livello in
-                    Cybersecurity all’Università di Pisa. Nel 2026 ho concluso un’academy di 238 ore su Python, AI, BI
-                    e Power BI.</p>
-                <p>Tra i miei progetti: un honeypot SSH in Python con dashboard web, un analizzatore di traffico TCP in
-                    sviluppo e la tesi del master, un confronto tra Docker e Podman su vulnerabilità CVE e isolamento
-                    dei container.</p>
-                <p>Prima della cybersecurity ho studiato Orientalistica e, in tirocinio, ho organizzato dati
-                    archeologici digitali con strumenti GIS per OrME e MAPPALab.</p>
-                <p>Cerco un ruolo junior o uno stage in IT, sviluppo, dati o cybersecurity, a Pisa, in presenza,
-                    ibrido o da remoto.</p>
-            </section>
+            <p class="place">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                        d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                    <circle cx="12" cy="10" r="3" />
+                </svg>
+                <span>Pisa, Italy</span>
+            </p>
+        </section>
 
-            <section id="progetti">
-                <h2>Progetti</h2>
+        <section id="about">
+            <h2>About me</h2>
+            <p>I hold a technical diploma in Computer Science and Telecommunications and a First-Level Master's degree
+                in Cybersecurity from the University of Pisa. In 2026 I completed a 238-hour academy in Python, AI, BI
+                and Power BI.</p>
+            <p>My projects include an SSH honeypot in Python with a web dashboard, a TCP traffic analyzer in
+                development, and my Master's thesis, a comparison of Docker and Podman on CVE vulnerabilities and
+                container isolation.</p>
+            <p>Before cybersecurity I studied Oriental Studies and, during internships, organized digital
+                archaeological data with GIS tools for OrME and MAPPALab.</p>
+            <p>I am looking for a junior role or an internship in IT, development, data or cybersecurity, in Pisa
+                (on-site or hybrid) or remote.</p>
+        </section>
 
-                <article>
-                    <h3>Project Work Accademico: Analisi comparativa delle vulnerabilità di Docker e Podman</h3>
-                    <p>Tesi redatta in LaTeX per il conseguimento del Master di I Livello in Cybersecurity</p>
-                    <p>La tesi esplora in profondità i meccanismi di isolamento e le vulnerabilità intrinseche di
-                        Docker e Podman. Attraverso lo studio metodico e comparato delle storiche CVE (Common
-                        Vulnerabilities and Exposures), la ricerca dimostra come il design architetturale di un
-                        software non determini solamente le sue funzionalità operative, ma plasmi e indirizzi
-                        direttamente le strategie offensive degli attaccanti.</p>
-                    <p class="links"><a
-                            href="https://github.com/tarantaino/Project-Work-Accademico---Analisi-comparativa-delle-vulnerabilit-di-Docker-e-Podman">Tesi
-                            su GitHub</a></p>
-                </article>
+        <section id="projects">
+            <h2>Projects</h2>
+            <p class="note">Honeytrap and Network Analyzer were built with the help of AI assistants.</p>
 
-                <article>
-                    <h3>Honeytrap</h3>
-                    <p>Un honeypot SSH in Python (Paramiko): un finto server che rifiuta ogni accesso e registra IP,
-                        username e password dei tentativi di forza bruta. Gli eventi vengono salvati in SQLite e
-                        mostrati in tempo reale in una dashboard web in Flask. Honeypot e dashboard sono due servizi
-                        separati, eseguiti in container Docker.</p>
-                    <p>Misure di sicurezza incluse: query parametrizzate contro la SQL injection, protezione dallo XSS
-                        memorizzato nella dashboard, container con utente non root e dashboard raggiungibile solo da
-                        localhost.</p>
-                    <p>Tecnologie: Python, Paramiko, Flask, SQLite, JavaScript, Docker.</p>
-                    <p class="links"><a href="https://github.com/tarantaino/honeytrap">Codice su GitHub</a></p>
-                </article>
+            <article class="card">
+                <h3>Docker and Podman: a comparative vulnerability analysis</h3>
+                <p class="meta">Master's thesis, written in LaTeX, First-Level Master in Cybersecurity</p>
+                <p>The thesis explores the isolation mechanisms and intrinsic vulnerabilities of Docker and Podman.
+                    Through a methodical, comparative study of historical CVEs (Common Vulnerabilities and Exposures),
+                    the research shows how a software's architectural design shapes not only its functionality but
+                    also the offensive strategies of attackers.</p>
+                <p class="links"><a
+                        href="https://github.com/tarantaino/Project-Work-Accademico---Analisi-comparativa-delle-vulnerabilit-di-Docker-e-Podman">Thesis
+                        on GitHub</a></p>
+            </article>
 
-                <article>
-                    <h3>Network Analyzer</h3>
-                    <p>Cattura in tempo reale i pacchetti TCP con PyShark ed esporta un’analisi di base in CSV. È in
-                        sviluppo: i prossimi passi sono l’ispezione degli handshake TLS e le impronte JA3/JA4.</p>
-                    <p>Tecnologie: Python, PyShark (TShark), CSV.</p>
-                    <p class="links"><a href="https://github.com/tarantaino/network-analyzer">Codice su GitHub</a></p>
-                </article>
+            <article class="card">
+                <h3>Honeytrap</h3>
+                <p class="meta">Python, Paramiko, Flask, SQLite, JavaScript, Docker</p>
+                <p>An SSH honeypot: a fake server that rejects every login and records the IP, username and password
+                    of brute-force attempts. Events are stored in SQLite and shown in real time on a Flask web
+                    dashboard. The honeypot and the dashboard are two separate services running in Docker containers.
+                </p>
+                <p>Security measures included: parameterized queries against SQL injection, protection against stored
+                    XSS in the dashboard, containers running as a non-root user, and a dashboard reachable from
+                    localhost only.</p>
+                <p class="links"><a href="https://github.com/tarantaino/honeytrap">Code on GitHub</a></p>
+            </article>
 
-                <article>
-                    <h3>Chat Client-Server</h3>
-                    <p>Chat in Python su socket TCP e UDP, sviluppata nel corso di Networking del Master. Il server
-                        gestisce la registrazione degli utenti (username, IP e porta), l’elenco dei connessi e le chat
-                        dirette tra utenti, con codice modulare a classi. Prossimi passi: cifratura end-to-end e
-                        un’interfaccia semplice.</p>
-                    <p>Tecnologie: Python, socket, TCP/UDP.</p>
-                    <p class="links"><a href="https://github.com/tarantaino/Client-Server-Chat-Project">Codice su
-                            GitHub</a></p>
-                </article>
+            <article class="card">
+                <h3>Network Analyzer</h3>
+                <p class="meta">Python, PyShark (TShark), CSV</p>
+                <p>Captures TCP packets live with PyShark and exports a basic analysis to CSV. Still in development:
+                    TLS handshake inspection and JA3/JA4 fingerprints are next.</p>
+                <p class="links"><a href="https://github.com/tarantaino/network-analyzer">Code on GitHub</a></p>
+            </article>
 
-                <article>
-                    <h3>Complex Network Analysis Project</h3>
-                    <p>Analisi di un dataset di citazioni HEP-PH (fisica delle alte energie): distribuzione dei gradi
-                        (CCDF), assortatività, community detection e resilienza strutturale. Sviluppata nel corso di
-                        Networking del Master in Cybersecurity (2024/25).</p>
-                    <p>Tecnologie: Python, Jupyter, NumPy, matplotlib, igraph.</p>
-                    <p class="links"><a href="https://github.com/tarantaino/Complex-Network-Analysis-Project">Codice su
-                            GitHub</a></p>
-                </article>
+            <article class="card">
+                <h3>Complex Network Analysis</h3>
+                <p class="meta">Python, Jupyter, NumPy, matplotlib, igraph. Networking course, Master in Cybersecurity,
+                    2024/25</p>
+                <p>Analysis of the HEP-PH citation dataset (high-energy physics): degree distribution (CCDF),
+                    assortativity, community detection and structural resilience.</p>
+                <p class="links"><a href="https://github.com/tarantaino/Complex-Network-Analysis-Project">Code on
+                        GitHub</a></p>
+            </article>
 
-                <article>
-                    <h3>Esercizi vari in Python</h3>
-                    <p>Serie di esercizi svolti durante l’Academy in AI, BI e Power BI.</p>
-                    <p>Tecnologie: Python.</p>
-                    <p class="links"><a
-                            href="https://github.com/tarantaino/Esercizi-Python-Academy-AI-BI-PowerBI">Codice su
-                            GitHub</a></p>
-                </article>
-            </section>
+            <article class="card">
+                <h3>Client-Server Chat</h3>
+                <p class="meta">Python, socket, TCP/UDP. Networking course, Master in Cybersecurity</p>
+                <p>A chat application in Python over TCP and UDP sockets. The server handles user registration
+                    (username, IP and port), the list of connected users and direct chats between users, with modular
+                    class-based code. Next steps: end-to-end encryption and a simple interface.</p>
+                <p class="links"><a href="https://github.com/tarantaino/Client-Server-Chat-Project">Code on GitHub</a>
+                </p>
+            </article>
 
-            <section id="competenze">
-                <h2>Competenze</h2>
-                <ul>
-                    <li><strong>Programmazione:</strong> Python (programmazione a oggetti, moduli e package,
-                        decorator), SQL, HTML/CSS</li>
-                    <li><strong>Analisi dati e BI:</strong> NumPy, Matplotlib, Power BI, Power Query, Data Warehouse
-                    </li>
-                    <li><strong>Cybersecurity e reti:</strong> Wireshark, Kali Linux, PyShark, TCP/IP, analisi del
-                        traffico, Docker, Podman</li>
-                    <li><strong>Altri strumenti:</strong> Git/GitHub, QGIS, Jupyter Notebook, Cisco Packet Tracer</li>
-                </ul>
-            </section>
+            <article class="card">
+                <h3>Python exercises</h3>
+                <p class="meta">Python</p>
+                <p>A series of exercises from the Python, AI, BI and Power BI academy.</p>
+                <p class="links"><a href="https://github.com/tarantaino/Esercizi-Python-Academy-AI-BI-PowerBI">Code on
+                        GitHub</a></p>
+            </article>
+        </section>
 
-            <section id="formazione">
-                <h2>Formazione</h2>
-                <ul>
-                    <li><strong>Academy in Python, AI, BI e Power BI</strong>, BC Soft – WinTime, 238 ore, 2026</li>
-                    <li><strong>Master di I livello in Cybersecurity</strong>, Università di Pisa, 2025–2026. Tesi:
-                        analisi comparativa delle vulnerabilità di Docker e Podman</li>
-                    <li><strong>Laurea magistrale in Orientalistica</strong> (Vicino e Medio Oriente antico),
-                        Università di Pisa, 2024</li>
-                    <li><strong>Laurea triennale in Scienze dei Beni Culturali</strong>, Università di Pisa, 2021</li>
-                    <li><strong>Diploma tecnico in Informatica e Telecomunicazioni</strong>, I.T.S.T. “E. Fermi”,
-                        Francavilla Fontana, 2017</li>
-                </ul>
-            </section>
-        </main>
+        <section id="skills">
+            <h2>Skills</h2>
+            <dl>
+                <dt>Programming</dt>
+                <dd>Python (object-oriented programming, modules and packages, decorators), SQL, HTML/CSS</dd>
+                <dt>Data analysis and BI</dt>
+                <dd>NumPy, Matplotlib, Power BI, Power Query, Data Warehouse</dd>
+                <dt>Cybersecurity and networking</dt>
+                <dd>Wireshark, Kali Linux, PyShark, TCP/IP, traffic analysis, Docker, Podman</dd>
+                <dt>Other tools</dt>
+                <dd>Git/GitHub, QGIS, Jupyter Notebook, Cisco Packet Tracer</dd>
+            </dl>
+        </section>
 
-    </div>
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Academy in Python, AI, BI and Power BI</strong>, BC Soft, WinTime, 238 hours, 2026</li>
+                <li><strong>First-Level Master's in Cybersecurity</strong>, University of Pisa, 2025 to 2026. Thesis:
+                    comparative analysis of Docker and Podman vulnerabilities</li>
+                <li><strong>Master's degree in Oriental Studies</strong> (Ancient Near and Middle East), University of
+                    Pisa, 2024</li>
+                <li><strong>Bachelor's degree in Cultural Heritage Sciences</strong>, University of Pisa, 2021</li>
+                <li><strong>Technical diploma in Computer Science and Telecommunications</strong>, I.T.S.T. "E.
+                    Fermi", Francavilla Fontana, 2017</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Alessandro Tarantino. Last updated November 2026.</p>
+    </footer>
 </body>
 
 </html>
