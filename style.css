@@ -10,13 +10,14 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg: #1F1C19;
-        --surface: #2A2622;
-        --text: #EFE8DE;
-        --muted: #B3A89A;
-        --line: #413B34;
-        --accent: #F29A52;
+        --bg: #FBF8F3;
+        --surface: #F3ECE1;
+        --text: #2B2724;
+        --muted: #645B53;
+        --line: #E1D6C6;
+        --accent: #A94A08;
     }
+
 }
 
 /* Base */
