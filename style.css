@@ -26,26 +26,25 @@
 
 /* Colors */
 :root {
-    --bg: #FBF8F3;
-    --surface: #F3ECE1;
-    --text: #2B2724;
-    --muted: #645B53;
-    --line: #E1D6C6;
-    --accent: #A94A08;
+    --bg: #F5F2F8;
+    --surface: #EAE4F1;
+    --text: #2B2336;
+    --muted: #5E5470;
+    --line: #D8CFE3;
+    --accent: #7A4E00;
     --font-head: "Zilla Slab", Rockwell, "Roboto Slab", Georgia, serif;
     --font-body: "Public Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg: #FBF8F3;
-        --surface: #F3ECE1;
-        --text: #2B2724;
-        --muted: #645B53;
-        --line: #E1D6C6;
-        --accent: #A94A08;
+        --bg: #1E1A26;
+        --surface: #28232F;
+        --text: #EEE9F5;
+        --muted: #B3A9C4;
+        --line: #3B3449;
+        --accent: #E3B04B;
     }
-
 }
 
 /* Base */
